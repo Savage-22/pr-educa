@@ -1,0 +1,6 @@
+CREATE TABLE usuarios (
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(25) NOT NULL,
+    descripcion VARCHAR(30) NOT NULL,
+    dni INTEGER NOT NULL CHECK (dni >= 10000000 AND dni <= 99999999)
+);
