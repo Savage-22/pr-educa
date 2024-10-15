@@ -43,7 +43,7 @@ export const createUser = async (req, res) => {
             dni,
         });
 
-        console.log(result)
+        //console.log(result)
     } catch (error) {
         console.error("Error al conectar con el servidor:", error);
         return res.status(500).json({ message: "Error al conectar con el servidor" });
